@@ -1,0 +1,24 @@
+.form-title{
+    margin: 0;
+    color: 	#4e4e4e;
+    font-size: 40px;
+    font-family: 'Biryani', sans-serif;
+}
+.form-row input{
+    margin-left: 50px;
+}
+.ship-list-box{
+    width: 600px;
+}
+
+.my-notes{
+    font-size: 25px;
+    color: darkgreen;
+}
+.public-notes{
+    font-size: 25px;
+    color: blue;
+}
+* {
+    overflow-wrap: break-word
+}

@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    padding-bottom: 46px;
+}
+
+
+.nav-wrapper{
+    background-color: #3e3e3e;
+    position: relative;
+    height: 35px;
+    padding: 5px;
+}
+
+
+.logo{
+    margin: 0;
+    padding: 0;
+    display: inline;
+    position: absolute;
+}
+
+.logo-relative{
+    position: relative;
+}
+
+.logo-image{
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 170px;
+    height: 29px;
+}
+
+.logo-image img{
+    width: auto;
+    height: 100%; 
+}
+
+.logo-text{
+    text-decoration: none;
+    text-align: center;
+    width: 150px;
+    position: absolute;
+    font-size: 30px;
+    color:#e8c111;
+}
+
+.span{
+    color:white;
+}
+
+.nav-mobile{
+    margin: 0;
+    padding: 0;
+    display: inline;
+    position: absolute;
+    right: 0;
+}
+
+.nav-mobile li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav-mobile li a {
+    padding: 0px 5px 0px 5px;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    color:white;
+    transition-duration: 0.3s;
+}
+
+.nav-mobile li a:hover {
+    background-color: #ACA9BB;
+}
+
+
+.total_content_container{
+    background-image: url('../images/bg.png');
+    background-repeat: no-repeat;
+    max-width: 1270px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.total_form_container{
+    background-image: url('../images/bg.png');
+    background-repeat: no-repeat;
+    max-width: 1270px;
+    min-height: 600px;
+    padding-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.step_ahead{
+    max-width: 600px;
+    margin: auto;
+    display: table;
+    text-align: center; 
+    font-size: 40px;
+    font-family: 'Poiret One', cursive; 
+}
+.step_ahead div {
+    margin-top: 240px;
+    margin-bottom: 190px;
+    font-size: 50px;
+    font-family: 'Poiret One', cursive; 
+    color: white; 
+}
+
+.bt_join_now{
+    text-decoration: none;
+    background: transparent;
+    border: 2px white solid;
+    border-radius: 12px;
+    color: white; 
+    font-size: 30px;
+    font-family: 'Poiret One', cursive; 
+    transition-duration: 0.4s;
+}
+.bt_join_now:hover{
+    background-color: white;
+    color: black;
+}
+h1 {
+    margin-top: -20px;
+    margin-bottom: -35px;
+    font-size: 80px;
+    font-family: 'Biryani', sans-serif;
+}
+h3 {
+    margin: 0;
+    color: 	#4e4e4e;
+    font-size: 60px;
+    font-family: 'Biryani', sans-serif;
+}
+h4 {
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: 	#4e4e4e;
+    font-size: 30px;
+    font-family: 'Biryani', sans-serif;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+
+.form-container{
+    background-color: #f3f1f1;
+    width: 400px;
+    padding: 50px 30px 50px 30px;
+    border-radius: 10px;
+    box-shadow: 5px 10px #888888;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.new-ship-form-container{
+    background-color: #f3f1f1;
+    width: 60%;
+    padding: 50px 30px 50px 30px;
+    border-radius: 10px;
+    box-shadow: 5px 10px #888888;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-box input{
+    font-size: 25px;
+    display: block;
+    margin-top: 15px;
+}
+
+
+.warning-message{
+    color: #7c0303;
+}
+
+.warning-field {
+    display: inline-block;
+    width: 200px;
+    color: red;
+    font-size: small;
+}
+
+.form-title{
+    text-align: center;
+    margin: 0;
+    color: 	#4e4e4e;
+    font-size: 40px;
+    font-family: 'Biryani', sans-serif;
+}
+.form-row input{
+    margin-left: 50px;
+}
+
+
+
+
+
+.registration-form{
+    padding: 0px 30px 0px 30px;
+}
+
+.registration-form div input{
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+}
+
+.new-ship-registration-form{
+    padding: 0px 30px 0px 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.new-ship-registration-form div input{
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+}
+.left_box,.right_box{
+    flex-basis: 46%;
+    margin:  2%;
+}
+
+.file-input{
+    min-width: 500px;
+}
+
+.row-is-invalid{
+    border: 2px solid crimson;
+	border-radius: 4px;
+}
+.row-is-valid{
+    border: 2px solid lawngreen;
+	border-radius: 4px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: lightgray;
+    border-radius: 4px;
+    max-width: inherit;
+    width: 100%;
+    height: 46px;
+    font-size: 15px;
+}
+
+.footer-inline {
+    display: inline-block;
+    width: 48%;
+    padding-left: 1%;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+table, th, td {
+    border-radius: 4px;
+    text-align: center;
+}
+
+.color-table thead tr {
+    background-color: rgb(104, 101, 101);
+    border-radius: 4px;
+    color: white;
+}
+.submit-button-not-available{
+    font-family: 'Permanent Marker', cursive;
+    color: #ff2121;
+    background-color: lightgray;
+	border: 2px solid black;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 26px;
+    padding: 10px;
+    min-width: 200px;
+
+}
+.submit-button-available{
+    min-width: 200px;
+    background-color: #f7dd0d;
+    font-family: 'Permanent Marker', cursive;
+    color: #ff2121;
+	border: 2px solid black;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 26px;
+	padding: 10px;
+}
+
+
+.ship-list-box{
+    background-color: #f3f1f1;
+    font-family: 'Poiret One', sans-serif;
+    width: 1000px;
+    padding: 50px 30px 50px 30px;
+    border-radius: 10px;
+    box-shadow: 5px 10px #888888;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ship-list-element{
+    margin-top: 5px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.time_of_creation{
+    position: absolute;
+    right: 130px;
+}
+.add-button {
+    border: solid 1px gray;
+    box-shadow: 2px 2px gray;
+    background-color: transparent;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 0px;
+}
+
+.delete-button {
+    border: solid 1px gray;
+    box-shadow: 2px 2px gray;
+    background-color: transparent;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 70px;
+}
+.add-button:hover,.delete-button:hover,.paggination-button:hover{
+    background-color: #ACA9BB;
+    color: white;
+}
+.add-button:active,.delete-button:hover,.paggination-button:hover{
+    background-color: black;
+    color: white;
+}
+
+.add-button:focus,.delete-button:hover,.paggination-button:hover{
+    outline: none;
+}
+.ship-status{
+    color: red;
+}
+
+.paggination-button{
+    color: black;
+    text-decoration: none;
+    border: solid 1px gray;
+    box-shadow: 2px 2px gray;
+    background-color: transparent;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+.numberOfShips{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.yellowRow{
+    background-color: #c78408;
+    transition-duration: 0.4s;
+    
+}
+.redRow{
+    background-color: #ACA9BB;
+    transition-duration: 0.4s;
+}
+.greenRow{
+    background-color: #e8c111;
+    transition-duration: 0.4s;
+}
+
+.blueRow{
+    background-color: #DCD9EB;
+    transition-duration: 0.4s;
+}

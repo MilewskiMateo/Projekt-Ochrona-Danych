@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>FlashBox</title>
+    <meta charset="utf-8">
+    <link href="static/styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Cambay&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="static/scripts/new_note_script.js"></script>
+</head>
+
+<body>
+    <div class="nav-wrapper">
+        <ul class="nav-mobile">
+            <li><a href="/">Home</a></li>
+            <li><a href="/registration">Rejestracja</a></li>
+            {% if isLoggedIn %}
+            <li><a href="/notes">Notatki</a></li>
+            <li><a href="/new_note">Nowa Notatka</a></li>
+            <li><a href="/logout">Wyloguj</a></li>
+            {% else %}
+            <li><a href="/login">Login</a></li>
+            {% endif %}
+        </ul>
+    </div>
+
+ 
+    <div class="total_form_container">
+        <div class="form-container">
+            <div class="form-box">
+
+                <div class="form-title">
+                    Dodaj notatke :)
+                </div>
+
+                <form id="new-note-form" class="registration-form"
+                    action="https://localhost:8080/login/log" method="POST">
+                    
+                    <input id="csrf_token" type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+
+                    <div>
+                        <input id="note_title" type="text" name="note_title" placeholder="Tytuł notatki" />
+                    </div>
+
+                    <div>
+                        <input id="note" type="text" name="note" placeholder="Treść notatki" />
+                    </div>
+
+                    <input type="radio" id="normal" name="type" value="normal" checked="true">
+                    <label for="normal">Normalna Notatka</label><br>
+                    <input type="radio" id="public" name="type" value="public">
+                    <label for="public">Publiczna Notatka</label><br>
+                    <input type="radio" id="secret" name="type" value="secret">
+                    <label for="secret">Sekretna Notatka</label>
+
+                    <div>
+                        <input id="note_password" type="text" name="note_password" placeholder="Hasło do notatki" disabled="true" />
+                    </div>
+
+                    <div class="form-row">
+                        <input id="button-reg-form" type="submit" value="Dodaj"
+                            class="submit-button-not-available" />
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+
+    </div>
+    <footer>
+        <p class="footer-inline left">&copy; 2020 Mateusz Milewski</p>
+    </footer>
+
+</body>
+
+</html>

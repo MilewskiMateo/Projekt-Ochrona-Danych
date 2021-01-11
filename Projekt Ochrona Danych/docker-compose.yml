@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    depends_on:
+      - flask
+    ports:
+      - "443:443"
+
+  flask: 
+    build: ./flask
+    container_name: flask
+    environment:
+      FLASK_ENV: development
+      SESSION_SECRET: $SESSION_SECRET
+    expose: 
+      - 8080

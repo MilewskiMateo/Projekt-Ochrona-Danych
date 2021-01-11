@@ -1,0 +1,8 @@
+Flask
+gunicorn
+uwsgi
+passlib
+flask_wtf
+pycryptodome
+pycryptodomex
+flask-sqlalchemy
